@@ -6,6 +6,7 @@ import { FaCottonBureau } from "react-icons/fa";
 import { AiOutlineContacts } from "react-icons/ai";
 import { AiOutlineSafetyCertificate } from "react-icons/ai";
 import { AiOutlineFileSearch } from "react-icons/ai";
+import head from "../assets/head.jpeg";
 export const Sidebar = () => {
   return (
     <div>
@@ -38,7 +39,7 @@ export const Sidebar = () => {
       >
         <div className="h-full px-3 py-4 overflow-y-auto bg-gray-50 flex flex-col items-center gap-10 w-full">
           <img
-            src="https://images.unsplash.com/photo-1518655048521-f130df041f66?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cG9ydGZvbGlvJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
+            src={head}
             alt="#"
             className="rounded-full w-[100px] h-[100px] text-center"
           />
