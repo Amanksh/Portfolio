@@ -11,8 +11,8 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
   return (
     <AnchorLink
       className={` ${
-        selectedPage == lowserCasePage ? "sm:text-yellow text-gray-200" : " "
-      } sm:hover:text-btncolor sm:hover:border-b-2  hover:text-primary sm:hover:border-btncolor transition duration-500`}
+        selectedPage == lowserCasePage ? "text-yellow " : " "
+      } sm:hover:text-btncolor sm:hover:border-b-2 text-headColor hover:text-primary sm:hover:border-btncolor transition duration-500 text-xl`}
       href={`#${lowserCasePage}`}
       onClick={() => setSelectedPage(lowserCasePage)}
     >
@@ -24,12 +24,32 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
 const Navbar = ({ selectedPage, setSelectedPage }) => {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
   const isAboveSmallScreens = useMediaQuery("(min-width : 768px)");
+
   console.log(isMenuToggled);
 
+  const [color, setColor] = useState(false);
+
+  const changeColor = () => {
+    if (window.scrollY >= 90) {
+      setColor(true);
+    } else {
+      setColor(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeColor);
+  console.log(` color : ${color}`);
+
   return (
-    <nav className={`z-40 w-full fixed top-0 py-6 `}>
+    <nav
+      className={` ${
+        color ? "bg-primary shadow-lg" : " "
+      } z-40 w-full fixed top-0 py-6  shadow-slate-100`}
+    >
       <div className="flex items-center justify-between mx-auto w-5/6  ">
-        <h3 className="font-playfair text-3xl font-bold">Aman</h3>
+        <h3 className="font-playfair text-3xl font-bold text-headColor">
+          Aman
+        </h3>
 
         {/* {Desktop mav} */}
 
@@ -57,20 +77,23 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
             />
           </div>
         ) : (
-          <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
+          <button
+            onClick={() => setIsMenuToggled(!isMenuToggled)}
+            className="text-headColor"
+          >
             <AiOutlineMenu size={20} />
           </button>
         )}
 
         {!isAboveSmallScreens && isMenuToggled && (
-          <div className="fixed right-0 bottom-0 h-full bg-btncolor border-l-2 shadow-md w-[300px]">
+          <div className="fixed right-0 bottom-0 h-full  bg-btncolor border-l-2 shadow-md shadow-slate-600 w-[300px]">
             <div className="flex justify-end p-10">
               <button onClick={() => setIsMenuToggled(!setIsMenuToggled)}>
                 <AiOutlineCloseCircle size={25} color="black" />
               </button>
             </div>
 
-            <div className="flex flex-col gap-10 ml-[33%] text-3xl text-headcolor">
+            <div className="flex flex-col gap-10 ml-[33%] text-3xl text-headcolor font-bold">
               <Link
                 page="Home"
                 selectedPage={selectedPage}

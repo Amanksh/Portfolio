@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import useMediaQuery from "./hooks/useMediaQueries";
 import Navbar from "./Components/Navbar";
 import Landing from "./Components/Landing";
+import { Skills } from "./Components/Skills";
 
 function App() {
   const [selectedPages, setSelectedPage] = useState("home");
@@ -11,6 +12,7 @@ function App() {
     <div className="app bg-primary ">
       <Navbar selectedPage={selectedPages} setSelectedPage={setSelectedPage} />
       <Landing setSelectedPage={setSelectedPage} />
+      <Skills />
     </div>
   );
 }

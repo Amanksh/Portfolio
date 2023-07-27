@@ -8,10 +8,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#16161a",
+        primary: "#fffffe",
         btncolor: "#7f5af0",
-        headColor: "#fffffe",
-        para: "#94a1b2",
+        headColor: "#272343",
+        para: "#2d334a",
         blue: "#2CBCE9",
         red: "#DC4492",
         yellow: "#FDCC49",
