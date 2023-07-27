@@ -18,6 +18,7 @@ export default {
         grey: "#ededed",
         "deep-blue": "#010026",
         "dark-grey": "#7575757",
+        mainBtn: "#19b6d2",
       },
       fontFamily: {
         playfair: ["Playfair Display", "serif"],

@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import Typed from "react-typed";
 
 const Landing = ({ setSelectedPage }) => {
   return (
@@ -17,17 +18,25 @@ const Landing = ({ setSelectedPage }) => {
           }}
           className="p-11 flex flex-col items-start gap-7 text-headColor"
         >
-          <h1 className="text-4xl sm:text-6xl font-sans font-bold">Hi i'm</h1>
-          <h2 className="text-3xl sm:text-6xl font-sans font-bold">
+          <h1 className="text-3xl sm:text-6xl font-sans font-bold">Hi i'm</h1>
+          <h2 className="text-3xl sm:text-6xl font-sans font-bold tracking-wide">
             Aman <span className="text-btncolor">kushwaha</span>
           </h2>
-          <p className="text-para text-xl">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati
-            quae aut neque nisi blanditiis tempore quas
+          <p className="text-para text-2xl">
+            Software Developer Specializing in{" "}
+            <span className="text-btncolor font-bold text-2xl sm:text-3xl">
+              {" "}
+              <Typed
+                strings={["Devops", "AWS", "MERN"]}
+                typeSpeed={120}
+                backSpeed={140}
+                loop
+              />{" "}
+            </span>
           </p>
           <AnchorLink
             onClick={() => setSelectedPage("contact")}
-            href="contact"
+            href="#contact"
             className="bg-btncolor p-3 rounded-lg text-primary font-bold font-sans hover:text-primary hover:bg-yellow sm:px-4  transition duration-300"
           >
             <div>CONTACT ME</div>

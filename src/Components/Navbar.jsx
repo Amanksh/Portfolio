@@ -3,8 +3,8 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import useMediaQuery from "../hooks/useMediaQueries";
 import { AiOutlineMenu } from "react-icons/ai";
 import { AiOutlineCloseCircle } from "react-icons/ai";
-
-import React from "react";
+import Comp1 from "../assets/Comp1.json";
+import Lottie from "lottie-react";
 
 const Link = ({ page, selectedPage, setSelectedPage }) => {
   const lowserCasePage = page.toLowerCase();
@@ -12,7 +12,7 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
     <AnchorLink
       className={` ${
         selectedPage == lowserCasePage ? "text-yellow " : " "
-      } sm:hover:text-btncolor sm:hover:border-b-2 text-headColor hover:text-primary sm:hover:border-btncolor transition duration-500 text-xl`}
+      } sm:hover:text-mainBtn sm:hover:border-b-2 text-headColor hover:text-primary sm:hover:border-mainBtn transition duration-500 text-xl`}
       href={`#${lowserCasePage}`}
       onClick={() => setSelectedPage(lowserCasePage)}
     >
@@ -44,12 +44,13 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
     <nav
       className={` ${
         color ? "bg-primary shadow-lg" : " "
-      } z-40 w-full fixed top-0 py-6  shadow-slate-100`}
+      } z-40 w-full fixed top-0 py-4  shadow-slate-100`}
     >
       <div className="flex items-center justify-between mx-auto w-5/6  ">
-        <h3 className="font-playfair text-3xl font-bold text-headColor">
-          Aman
-        </h3>
+        <Lottie loop={true} animationData={Comp1} className="w-[80px]" />
+
+        {/* <h3 className="font-playfair text-xl font-bold text-headColor">
+        </h3> */}
 
         {/* {Desktop mav} */}
 
@@ -86,7 +87,7 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
         )}
 
         {!isAboveSmallScreens && isMenuToggled && (
-          <div className="fixed right-0 bottom-0 h-full  bg-btncolor border-l-2 shadow-md shadow-slate-600 w-[300px]">
+          <div className="fixed right-0 bottom-0 h-full  bg-mainBtn border-l-2 shadow-md shadow-slate-600 w-[300px]">
             <div className="flex justify-end p-10">
               <button onClick={() => setIsMenuToggled(!setIsMenuToggled)}>
                 <AiOutlineCloseCircle size={25} color="black" />
