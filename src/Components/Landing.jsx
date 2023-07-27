@@ -5,7 +5,7 @@ import Typed from "react-typed";
 
 const Landing = ({ setSelectedPage }) => {
   return (
-    <section id="home" className="h-full flex justify-center items-center ">
+    <section id="home" className="h-screen flex justify-center items-center ">
       <div className="mx-auto sm:p-10  sm:w-[80%]">
         <motion.div
           initial="hidden"

@@ -14,7 +14,7 @@ export const Skills = () => {
       id="skills"
     >
       <div className="text-headColor sm:w-[80%] mx-auto sm:mt-20 mt-20 p-10 text-center">
-        <h1 className="font-bold font-sans sm:text-3xl text-3xl mb-6 inline-block border-b-4 border-btncolor ">
+        <h1 className="font-bold font-sans sm:text-3xl text-3xl mb-8 inline-block border-b-4 border-btncolor ">
           SKILLS
         </h1>
         <div className="sm:p-5 p-2 grid sm:grid-cols-3 grid-cols-2 gap-5">
