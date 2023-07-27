@@ -3,6 +3,7 @@ import useMediaQuery from "./hooks/useMediaQueries";
 import Navbar from "./Components/Navbar";
 import Landing from "./Components/Landing";
 import { Skills } from "./Components/Skills";
+import { Projects } from "./Components/Projects";
 
 function App() {
   const [selectedPages, setSelectedPage] = useState("home");
@@ -13,6 +14,7 @@ function App() {
       <Navbar selectedPage={selectedPages} setSelectedPage={setSelectedPage} />
       <Landing setSelectedPage={setSelectedPage} />
       <Skills />
+      <Projects />
     </div>
   );
 }
