@@ -4,6 +4,7 @@ import Navbar from "./Components/Navbar";
 import Landing from "./Components/Landing";
 import { Skills } from "./Components/Skills";
 import { Projects } from "./Components/Projects";
+import Contact from "./Components/Contact";
 
 function App() {
   const [selectedPages, setSelectedPage] = useState("home");
@@ -15,6 +16,7 @@ function App() {
       <Landing setSelectedPage={setSelectedPage} />
       <Skills />
       <Projects />
+      <Contact />
     </div>
   );
 }
