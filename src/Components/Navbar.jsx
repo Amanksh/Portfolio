@@ -4,7 +4,6 @@ import useMediaQuery from "../hooks/useMediaQueries";
 import { AiOutlineMenu } from "react-icons/ai";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import Comp1 from "../assets/Comp1.json";
-import Lottie from "lottie-react";
 
 const Link = ({ page, selectedPage, setSelectedPage }) => {
   const lowserCasePage = page.toLowerCase();
@@ -44,8 +43,6 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
       } z-40 w-full fixed top-0 py-2  shadow-slate-100`}
     >
       <div className="flex items-center justify-between mx-auto w-5/6  ">
-        <Lottie loop={true} animationData={Comp1} className="w-[80px]" />
-
         {/* <h3 className="font-playfair text-xl font-bold text-headColor">
         </h3> */}
 
