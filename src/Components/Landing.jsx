@@ -16,7 +16,7 @@ const Landing = ({ setSelectedPage }) => {
             hidden: { opacity: 0, x: -50 },
             visible: { opacity: 1, x: 0 },
           }}
-          className="p-11 flex flex-col items-start gap-7 text-headColor"
+          className="p-11 flex flex-col items-start sm:gap-7 gap-5 text-headColor"
         >
           <h1 className="text-3xl sm:text-6xl font-sans font-bold">Hi i'm</h1>
           <h2 className="text-3xl sm:text-6xl font-sans font-bold tracking-wide">

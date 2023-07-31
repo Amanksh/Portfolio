@@ -25,8 +25,6 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
   const isAboveSmallScreens = useMediaQuery("(min-width : 768px)");
 
-  console.log(isMenuToggled);
-
   const [color, setColor] = useState(false);
 
   const changeColor = () => {
@@ -38,7 +36,6 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
   };
 
   window.addEventListener("scroll", changeColor);
-  console.log(` color : ${color}`);
 
   return (
     <nav

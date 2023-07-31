@@ -5,6 +5,7 @@ import Landing from "./Components/Landing";
 import { Skills } from "./Components/Skills";
 import { Projects } from "./Components/Projects";
 import Contact from "./Components/Contact";
+import About from "./Components/About";
 
 function App() {
   const [selectedPages, setSelectedPage] = useState("home");
@@ -14,6 +15,8 @@ function App() {
     <div className="app bg-primary ">
       <Navbar selectedPage={selectedPages} setSelectedPage={setSelectedPage} />
       <Landing setSelectedPage={setSelectedPage} />
+
+      <About />
       <Skills />
       <Projects />
       <Contact />
