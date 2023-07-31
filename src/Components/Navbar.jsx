@@ -3,7 +3,6 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import useMediaQuery from "../hooks/useMediaQueries";
 import { AiOutlineMenu } from "react-icons/ai";
 import { AiOutlineCloseCircle } from "react-icons/ai";
-import Comp1 from "../assets/Comp1.json";
 
 const Link = ({ page, selectedPage, setSelectedPage }) => {
   const lowserCasePage = page.toLowerCase();
