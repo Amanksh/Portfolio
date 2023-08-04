@@ -21,9 +21,9 @@ const About = () => {
 
           <div className="max-w-[860px] w-full grid sm:grid-cols-2 gap-8 ">
             <div className="text-center sm:text-4xl text-3xl font-bold">
-              <p>
-                Hi. I'm Aman , happy that you're here. Please take a look
-                around.
+              <p>Hi. I'm Aman </p>
+              <p className="text-gray-400 sm:text-4xl text-xl">
+                Full Stack Developer{" "}
               </p>
             </div>
             <div className="text-center">
@@ -31,8 +31,8 @@ const About = () => {
                 {" "}
                 A software developer with experience in building Responsive and
                 Scalable Web apps. I am well-knowledged in Backend Technologies
-                like NODEJS and Databases. In addition to Web Development, I am
-                also a Devops and Linux Enthusiast .
+                like NodeJS ,Express and Databases. In addition to Web
+                Development, I am also a Devops and Linux Enthusiast .
               </p>
             </div>
           </div>

@@ -3,6 +3,8 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import useMediaQuery from "../hooks/useMediaQueries";
 import { AiOutlineMenu } from "react-icons/ai";
 import { AiOutlineCloseCircle } from "react-icons/ai";
+import Lottie from "lottie-react";
+import comp1 from "../assets/Comp1.json";
 
 const Link = ({ page, selectedPage, setSelectedPage }) => {
   const lowserCasePage = page.toLowerCase();
@@ -44,6 +46,7 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
       <div className="flex items-center justify-between mx-auto w-5/6  ">
         {/* <h3 className="font-playfair text-xl font-bold text-headColor">
         </h3> */}
+        <Lottie loop={true} animationData={comp1} className="w-[80px]" />
 
         {/* {Desktop mav} */}
 
