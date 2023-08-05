@@ -6,7 +6,7 @@ import Typed from "react-typed";
 const Landing = ({ setSelectedPage }) => {
   return (
     <section id="home" className="h-screen flex justify-center items-center ">
-      <div className="mx-auto sm:p-10  sm:w-[80%]">
+      <div className="mx-auto sm:p-10  sm:w-[80%] mt-20 sm:mt-0">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -16,13 +16,13 @@ const Landing = ({ setSelectedPage }) => {
             hidden: { opacity: 0, x: -50 },
             visible: { opacity: 1, x: 0 },
           }}
-          className="p-11 flex flex-col items-start sm:gap-7 gap-5 text-headColor"
+          className="p-11 flex flex-col items-start  sm:gap-7 gap-5 text-headColor"
         >
           <h1 className="text-3xl sm:text-6xl font-sans font-bold">Hi i'm</h1>
           <h2 className="text-3xl sm:text-6xl font-sans font-bold tracking-wide">
             Aman <span className="text-btncolor">kushwaha</span>
           </h2>
-          <p className="text-para text-2xl">
+          <p className="text-para  text-2xl">
             Software Developer Specializing in{" "}
             <span className="text-btncolor font-bold text-2xl sm:text-3xl">
               {" "}
