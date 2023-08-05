@@ -12,7 +12,7 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
     <AnchorLink
       className={` ${
         selectedPage == lowserCasePage
-          ? "text-btncolor border-b-2 border-btncolor "
+          ? "text-[#7f5af0] sm:border-b-2 sm:border-btncolor "
           : " "
       } sm:hover:text-mainBtn sm:hover:border-b-2 text-headColor hover:text-primary sm:hover:border-mainBtn transition duration-500 text-xl`}
       href={`#${lowserCasePage}`}
