@@ -2,7 +2,7 @@ import React from "react";
 
 export const SkillCompo = ({ img, heading, size }) => {
   return (
-    <div className="p-5  bg-heading flex justify-center items-center flex-col gap-3 shadow-lg">
+    <div className="p-5 bg-primary  bg-heading flex justify-center items-center flex-col gap-3 shadow-lg">
       <img
         src={img}
         alt="#"

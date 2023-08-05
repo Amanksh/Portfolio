@@ -12,3 +12,13 @@ body,
   background-color: "#16161a";
   @apply text-white;
 }
+
+.about {
+  background-image: url("./assets/noise2.svg");
+}
+body {
+  background-image: url("./assets/noise2.svg");
+}
+.skills {
+  background-image: url("./assets/noise2.svg");
+}
