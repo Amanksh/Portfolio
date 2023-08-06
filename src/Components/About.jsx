@@ -15,7 +15,7 @@ const About = () => {
       // style={{ backgroundImage: `${noise}` }}
     >
       <div className="flex flex-col justify-start items-center w-full h-full">
-        <div className=" sm:p-20 p-10 rounded-md bg-primary shadow-lg mx-w-[800px] text-headColor flex flex-col justify-start items-center gap-10 w-5/6 mx-auto">
+        <div className=" sm:p-20 p-10 rounded-md bg-primary shadow-lg mx-w-[800px]  sm:mt-32 text-headColor flex flex-col justify-start items-center gap-10 w-5/6 mx-auto">
           <div className="text-center pb-8 pl-4 mb-auto">
             <p className="text-4xl font-bold  border-b-4 border-btncolor">
               About Me
