@@ -2,6 +2,9 @@ import { useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import useMediaQuery from "../hooks/useMediaQueries";
 import { AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineCloseCircle } from "react-icons/ai";
+import Lottie from "lottie-react";
+import comp1 from "../assets/Comp2.json";
 import { IoIosHome } from "react-icons/io";
 import { GiSkills } from "react-icons/gi";
 import { AiFillCloseCircle } from "react-icons/ai";
@@ -53,6 +56,7 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
         </h3> */}
         {/* <h1>Aman</h1> */}
         {/* {Desktop mav} */}
+        <Lottie loop={true} animationData={comp1} className="w-[80px]" />
 
         {isAboveSmallScreens ? (
           <div className="flex justify-between gap-16 font-opensans font-bold">

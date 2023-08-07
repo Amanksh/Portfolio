@@ -13,7 +13,7 @@ import java from "../assets/java.svg";
 export const Skills = () => {
   return (
     <div
-      className="w-full skills min-h-screen p-50 flex justify-center items-start bg-primary"
+      className="w-full min-h-screen p-50 flex justify-center items-start bg-primary"
       id="skills"
     >
       <div className="text-headColor sm:w-[80%] mx-auto sm:mt-20 mt-20 p-10 text-center">
