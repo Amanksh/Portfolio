@@ -10,7 +10,7 @@ const About = () => {
     <div
       name="about"
       id="about"
-      className="w-full min-h-content bg-primary text-gray-300"
+      className="w-full about min-h-content bg-primary text-gray-300"
     >
       <div className="flex flex-col justify-start items-center w-full h-full">
         <div className=" sm:p-20 p-10 rounded-md bg-primary shadow-lg mx-w-[800px]  sm:mt-32 text-headColor flex flex-col justify-start items-center gap-10 w-5/6 mx-auto">

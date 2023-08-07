@@ -6,7 +6,7 @@ export const Projects = () => {
   return (
     <section
       id="projects"
-      className="w-full min-h-screen sm:p-12 p-2 flex items-center text-center flex-col"
+      className="w-full projects min-h-screen sm:p-12 p-2 flex items-center text-center flex-col"
     >
       <h1 className="font-bold text-headColor sm:text-3xl sm:mt-20 mt-28 text-3xl border-b-4 border-btncolor sm:mb-0 mb-10">
         PROJECTS

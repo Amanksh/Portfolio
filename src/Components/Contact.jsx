@@ -23,7 +23,7 @@ const Contact = () => {
       className="contact py-20 w-full h-screen flex items-center "
     >
       {/* HEADINGS */}
-      <div className="w-[80%] mx-auto flex flex-col items-center rounded-lg shadow-lg p-8 mt-5">
+      <div className="w-[80%] bg-primary mx-auto flex flex-col items-center rounded-lg shadow-lg p-8 mt-5">
         <div className="flex flex-col justify-center items-center text-center sm:w-[50%]">
           <motion.div
             initial="hidden"

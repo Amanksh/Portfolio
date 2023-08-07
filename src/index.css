@@ -12,3 +12,10 @@ body,
   background-color: "#16161a";
   @apply text-white;
 }
+
+.about,
+.skills,
+.projects,
+.contact {
+  background-image: url("./assets/pattern.svg");
+}
