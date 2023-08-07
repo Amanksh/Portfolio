@@ -51,7 +51,7 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
         color ? "bg-primary shadow-lg" : " "
       } z-40 w-full fixed top-0 py-2  shadow-slate-100`}
     >
-      <div className="flex items-center p-8 justify-end mx-auto w-5/6  ">
+      <div className="flex items-center p-1 justify-between mx-auto w-5/6  ">
         {/* <h3 className="font-playfair text-xl font-bold text-headColor">
         </h3> */}
         {/* <h1>Aman</h1> */}
