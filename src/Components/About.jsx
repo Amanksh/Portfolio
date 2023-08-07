@@ -3,7 +3,6 @@ import github from "../assets/github.svg";
 import linkedin from "../assets/linkedin.svg";
 import insta from "../assets/insta.svg";
 import facebook from "../assets/facebook.svg";
-import noise from "../assets/nnnoise.svg";
 import "../index.css";
 
 const About = () => {

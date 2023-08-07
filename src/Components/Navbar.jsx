@@ -3,8 +3,6 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import useMediaQuery from "../hooks/useMediaQueries";
 import { AiOutlineMenu } from "react-icons/ai";
 import { AiOutlineCloseCircle } from "react-icons/ai";
-import Lottie from "lottie-react";
-import comp1 from "../assets/Comp1.json";
 import { IoIosHome } from "react-icons/io";
 import { GiSkills } from "react-icons/gi";
 import { AiFillCloseCircle } from "react-icons/ai";
@@ -51,11 +49,10 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
         color ? "bg-primary shadow-lg" : " "
       } z-40 w-full fixed top-0 py-2  shadow-slate-100`}
     >
-      <div className="flex items-center justify-between mx-auto w-5/6  ">
+      <div className="flex items-center p-8 justify-end mx-auto w-5/6  ">
         {/* <h3 className="font-playfair text-xl font-bold text-headColor">
         </h3> */}
-        <Lottie loop={true} animationData={comp1} className="w-[80px]" />
-
+        {/* <h1>Aman</h1> */}
         {/* {Desktop mav} */}
 
         {isAboveSmallScreens ? (
