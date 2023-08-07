@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import Typed from "react-typed";
 
 const Landing = ({ setSelectedPage }) => {
   return (
@@ -25,13 +24,7 @@ const Landing = ({ setSelectedPage }) => {
           <p className="text-para  text-2xl">
             Software Developer Specializing in{" "}
             <span className="text-btncolor font-bold text-2xl sm:text-3xl">
-              {" "}
-              <Typed
-                strings={["Devops", "AWS", "MERN"]}
-                typeSpeed={120}
-                backSpeed={140}
-                loop
-              />{" "}
+              AWS
             </span>
           </p>
           <AnchorLink
