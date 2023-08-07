@@ -4,7 +4,7 @@ import useMediaQuery from "../hooks/useMediaQueries";
 import { AiOutlineMenu } from "react-icons/ai";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import Lottie from "lottie-react";
-import comp1 from "../assets/Comp1.json";
+import comp1 from "../assets/Comp2.json";
 import { IoIosHome } from "react-icons/io";
 import { GiSkills } from "react-icons/gi";
 import { AiFillCloseCircle } from "react-icons/ai";
