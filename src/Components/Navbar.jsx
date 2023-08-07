@@ -2,7 +2,6 @@ import { useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import useMediaQuery from "../hooks/useMediaQueries";
 import { AiOutlineMenu } from "react-icons/ai";
-import { AiOutlineCloseCircle } from "react-icons/ai";
 import { IoIosHome } from "react-icons/io";
 import { GiSkills } from "react-icons/gi";
 import { AiFillCloseCircle } from "react-icons/ai";
