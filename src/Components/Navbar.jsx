@@ -11,7 +11,7 @@ import { AiFillCloseCircle } from "react-icons/ai";
 import { AiFillContacts } from "react-icons/ai";
 import { BsFillHddStackFill } from "react-icons/bs";
 import { FaUserSecret } from "react-icons/fa";
-
+import Typed from "react-typed";
 const Link = ({ page, selectedPage, setSelectedPage }) => {
   const lowserCasePage = page.toLowerCase();
   return (

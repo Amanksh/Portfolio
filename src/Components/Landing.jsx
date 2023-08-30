@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-
+import Typed from "react-typed";
 const Landing = ({ setSelectedPage }) => {
   return (
     <section id="home" className="h-screen flex justify-center items-center ">
@@ -24,7 +24,12 @@ const Landing = ({ setSelectedPage }) => {
           <p className="text-para  text-2xl">
             Software Developer Specializing in{" "}
             <span className="text-btncolor font-bold text-2xl sm:text-3xl">
-              AWS
+              <Typed
+                strings={["AWS", "MERN", "Devops"]}
+                typeSpeed={60}
+                backSpeed={100}
+                loop
+              ></Typed>
             </span>
           </p>
           <AnchorLink
