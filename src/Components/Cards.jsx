@@ -2,11 +2,10 @@ import React from "react";
 import "../index.css";
 const Cards = ({ title, link, img, code }) => {
   return (
-    <div className="bg-[#fff] text-primary rounded-lg w-[80%] sm:w-[300px] h-[300px] m-10 shadow-lg shadow-btncolor text-center">
-      <div
-        style={{ backgroundImage: `url(${img}) ` }}
-        className="bgImage rounded-lg w-[100%] h-[200px]"
-      />
+    <div className="bg-[#fff] p-3 text-primary rounded-lg w-[80%] sm:w-[300px] m-10 shadow-lg shadow-btncolor text-center">
+      <div className="mb-3">
+        <img src={img} alt="" />
+      </div>
       <h1 className="text-xl font-bold font-playfair mt-2 mb-3">{title}</h1>
       <a
         href={code}
