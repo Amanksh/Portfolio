@@ -2,7 +2,7 @@ import React from "react";
 import "../index.css";
 const Cards = ({ title, link, img, code }) => {
   return (
-    <div className="bg-[#fff] p-3 text-primary rounded-lg w-[80%] sm:w-[300px] m-10 shadow-lg shadow-btncolor text-center">
+    <div className="bg-[#fff] p-3 text-primary rounded-lg mx-auto sm:w-[300px] m-10 shadow-lg shadow-btncolor text-center">
       <div className="mb-3">
         <img src={img} alt="" />
       </div>
@@ -21,7 +21,7 @@ const Cards = ({ title, link, img, code }) => {
         type="button"
         className="py-2 px-4 inline-flex ml-2 justify-center items-center gap-2 rounded-md  font-semibold text-red-500 hover:text-white bg-btncolor/40 hover:bg-btncolor hover:border-red-500 focus:outline-none focus:ring-2 focus:ring-red-200 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800"
       >
-        Code
+        Live
       </a>
     </div>
   );
