@@ -8,10 +8,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#fffffe",
-        btncolor: "#7f5af0",
-        headColor: "#272343",
-        para: "#2d334a",
+        primary: "#060119",
+        btncolor: "#7148f9",
+        headColor: "#e4dcfe",
+        card: "#090123",
+        para: "#DDE6ED",
         blue: "#2CBCE9",
         red: "#DC4492",
         yellow: "#FDCC49",

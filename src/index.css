@@ -9,7 +9,6 @@ body,
 #root,
 .app {
   height: 100%;
-  background-color: "#16161a";
   @apply text-white;
 }
 
@@ -17,5 +16,13 @@ body,
 .skills,
 .projects,
 .contact {
-  background-image: url("./assets/pattern.svg");
+  /* background-image: url("./assets/Colored.svg");
+  background-repeat: no-repeat; */
+  background-color: #060119;
+}
+
+.bgImage {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

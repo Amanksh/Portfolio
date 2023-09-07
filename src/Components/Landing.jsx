@@ -4,7 +4,10 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import Typed from "react-typed";
 const Landing = ({ setSelectedPage }) => {
   return (
-    <section id="home" className="h-screen flex justify-center items-center ">
+    <section
+      id="home"
+      className="h-screen flex justify-center items-center bg-primary"
+    >
       <div className="mx-auto sm:p-10  sm:w-[80%] mt-20 sm:mt-0">
         <motion.div
           initial="hidden"
@@ -23,7 +26,7 @@ const Landing = ({ setSelectedPage }) => {
           </h2>
           <p className="text-para  text-2xl">
             Software Developer Specializing in{" "}
-            <span className="text-btncolor font-bold text-2xl sm:text-3xl">
+            <span className="text-headColor font-bold text-2xl sm:text-4xl">
               <Typed
                 strings={["AWS", "MERN", "Devops"]}
                 typeSpeed={60}

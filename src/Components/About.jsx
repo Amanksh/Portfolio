@@ -13,7 +13,7 @@ const About = () => {
       className="w-full about min-h-content bg-primary text-gray-300"
     >
       <div className="flex flex-col justify-start items-center w-full h-full">
-        <div className=" sm:p-20 p-10 rounded-md bg-primary shadow-lg mx-w-[800px]  sm:mt-32 text-headColor flex flex-col justify-start items-center gap-10 w-5/6 mx-auto">
+        <div className=" sm:p-20 p-10 rounded-md bg-card shadow-lg mx-w-[800px]  sm:mt-32 text-headColor flex flex-col justify-start items-center gap-10 w-5/6 mx-auto">
           <div className="text-center pb-8 pl-4 mb-auto">
             <p className="text-4xl font-bold  border-b-4 border-btncolor">
               About Me
@@ -33,7 +33,7 @@ const About = () => {
                 A software developer with experience in building Responsive and
                 Scalable Web apps. I am well-knowledged in Backend Technologies
                 like NodeJS ,Express and Databases. In addition to Web
-                Development, I am also a Devops and Linux Enthusiast .
+                Development, I am also a Devops and Linux Enthusiast
               </p>
             </div>
           </div>

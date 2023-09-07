@@ -1,31 +1,29 @@
 import React from "react";
-const Cards = ({ title, description, link, img, code }) => {
+import "../index.css";
+const Cards = ({ title, link, img, code }) => {
   return (
-    <div className=" bg-primary border border-gray-200 rounded-lg shadow-lg max-w-sm mx-auto">
-      <img className="rounded-t-lg w-[100%]" src={img} alt="#" />
-
-      <div className="p-5 text-left align-bottom">
-        <a href="#">
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">
-            {title}
-          </h5>
-        </a>
-        <p className="mb-3 font-normal text-gray-700 ">{description}</p>
-        <a
-          href={link}
-          className="inline-flex items-center px-3 py-2 text-sm font-bold hover:text-headColor text-center text-white bg-btncolor rounded-lg hover:bg-yellow  focus:ring-4 focus:outline-none focus:ring-blue-300  "
-          target="_blank"
-        >
-          Live Link
-        </a>
-        <a
-          href={code}
-          className="inline-flex items-center px-3 py-2 text-sm font-bold hover:text-headColor text-center text-white bg-btncolor ml-2 rounded-lg hover:bg-yellow focus:ring-4 focus:outline-none focus:ring-blue-300  "
-          target="_blank"
-        >
-          CODE
-        </a>
-      </div>
+    <div className="bg-[#fff] text-primary rounded-lg w-[80%] sm:w-[300px] h-[300px] m-10 shadow-lg shadow-btncolor text-center">
+      <div
+        style={{ backgroundImage: `url(${img}) ` }}
+        className="bgImage rounded-lg w-[100%] h-[200px]"
+      />
+      <h1 className="text-xl font-bold font-playfair mt-2 mb-3">{title}</h1>
+      <a
+        href={code}
+        target="_blank"
+        type="button"
+        className="py-2 px-4 inline-flex justify-center items-center gap-2 rounded-md font-semibold text-red-500 hover:text-white bg-btncolor/40 hover:bg-btncolor hover:border-red-500 focus:outline-none focus:ring-2 focus:ring-red-200 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800"
+      >
+        Code
+      </a>
+      <a
+        href={link}
+        target="_blank"
+        type="button"
+        className="py-2 px-4 inline-flex ml-2 justify-center items-center gap-2 rounded-md  font-semibold text-red-500 hover:text-white bg-btncolor/40 hover:bg-btncolor hover:border-red-500 focus:outline-none focus:ring-2 focus:ring-red-200 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800"
+      >
+        Code
+      </a>
     </div>
   );
 };
