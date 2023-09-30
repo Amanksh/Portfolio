@@ -96,10 +96,10 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
         )}
 
         {!isAboveSmallScreens && isMenuToggled && (
-          <div className="fixed right-0 bottom-0 h-full  bg-primary border-l-2 shadow-[inset_0_-1px_3px_rgba(0,0,0,0.2)] shadow-slate-600 w-[260px] mb-bg">
+          <div className="fixed right-0 bottom-0 h-full  bg-primary border-primary border-l-2 shadow-[inset_0_-1px_3px_rgba(0,0,0,0.2)] shadow-slate-600 w-[260px] mb-bg">
             <div className="flex justify-end p-10">
               <button onClick={() => setIsMenuToggled(!setIsMenuToggled)}>
-                <AiFillCloseCircle size={30} color="black" />
+                <AiFillCloseCircle size={30} color="white" />
               </button>
             </div>
 
@@ -107,7 +107,7 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
               <AnchorLink
                 className={`${
                   selectedPage == "home" ? " text-primary bg-slate-300" : ""
-                } flex gap-2 items-center  w-[100%] justify-center p-2 border-b-2   text-headColor text-xl rounded-lg`}
+                } flex gap-2 items-center  w-[100%] justify-center p-2 border-b-1   text-headColor text-xl rounded-lg`}
                 onClick={() => setSelectedPage("home")}
                 href="#home"
               >
@@ -122,7 +122,7 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
               <AnchorLink
                 className={`${
                   selectedPage == "about" ? "text-primary bg-slate-300" : ""
-                } flex gap-2 items-center font-bold text-xl  w-[100%] justify-center p-3 border-b-2  text-headColor rounded-lg `}
+                } flex gap-2 items-center font-bold text-xl  w-[100%] justify-center p-3 border-b-1  text-headColor rounded-lg `}
                 href="#about"
                 onClick={() => setSelectedPage("about")}
               >
@@ -137,7 +137,7 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
               <AnchorLink
                 className={`${
                   selectedPage == "skills" ? "text-primary bg-slate-300" : ""
-                } flex gap-2 items-center  w-[100%] justify-center p-3 border-b-2 text-xl text-headColor rounded-lg `}
+                } flex gap-2 items-center  w-[100%] justify-center p-3 border-b-1 text-xl text-headColor rounded-lg `}
                 onClick={() => setSelectedPage("skills")}
                 href="#skills"
               >
@@ -152,7 +152,7 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
               <AnchorLink
                 className={`${
                   selectedPage == "projects" ? "text-primary bg-slate-300" : ""
-                } flex gap-2 items-center  w-[100%] justify-center p-3 border-b-2 text-xl text-headColor rounded-lg `}
+                } flex gap-2 items-center  w-[100%] justify-center p-3 border-b-1 text-xl text-headColor rounded-lg `}
                 href="#projects"
                 onClick={() => setSelectedPage("projects")}
                 hrefLang="#projects"
@@ -168,7 +168,7 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
               <AnchorLink
                 className={`${
                   selectedPage == "contact" ? "text-primary bg-slate-300" : ""
-                } flex gap-2 items-center  w-[100%] justify-center p-3 border-b-2 text-headColor text-xl rounded-lg`}
+                } flex gap-2 items-center  w-[100%] justify-center p-3 border-b-1 text-headColor text-xl rounded-lg`}
                 href="#contact"
                 onClick={() => setSelectedPage("contact")}
               >

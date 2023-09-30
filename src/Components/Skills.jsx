@@ -20,7 +20,7 @@ export const Skills = () => {
         <h1 className="font-bold font-sans sm:text-3xl text-3xl mb-8 inline-block border-b-4 border-btncolor ">
           SKILLS
         </h1>
-        <div className="sm:p-5 p-2 grid sm:grid-cols-3 grid-cols-2 gap-5">
+        <div className="sm:p-5 p-2 grid sm:grid-cols-3 md:grid-cols-4 grid-cols-2 gap-5">
           <SkillCompo img={javascript} heading={"Javascript"} size={100} />
           <SkillCompo img={reactlogo} heading={"ReactJS"} />
           <SkillCompo img={python} heading={"Python"} />
