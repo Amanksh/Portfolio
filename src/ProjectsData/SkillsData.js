@@ -11,7 +11,7 @@ export const skillsData = [
   {
     img: javascript,
     language: "Javascript",
-    skills: ["Async js", "Functions", "DS", "Loops", "All", "Promises"],
+    skills: ["Async js", "Ajax", "Callbacks", "ES6 Syntax", "DOM", "Promises"],
   },
   {
     img: reactlogo,
