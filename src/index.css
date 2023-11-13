@@ -29,3 +29,16 @@ body,
 .card-front:hover .card {
   right: 0;
 }
+.modal {
+  /*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=7149f9&c2=ffffff&gt=l&gd=dbr
+*/
+  /* background: #7149f9; */
+  background: linear-gradient(315deg, #7149f9, #ffffff);
+  z-index: 10;
+}
+.skillcompo {
+  z-index: 1;
+  overflow: visible;
+}

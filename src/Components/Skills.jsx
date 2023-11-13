@@ -1,15 +1,7 @@
 import React from "react";
-import aws from "../assets/aws3.svg";
 import { SkillCompo } from "./SkillCompo";
-import reactlogo from "../assets/react.svg";
-import python from "../assets/python.svg";
-import node from "../assets/node.svg";
-import mongo from "../assets/mongo.svg";
-import cpp from "../assets/Cpp.svg";
-import express from "../assets/epxress.svg";
-import javascript from "../assets/javascript.svg";
-import java from "../assets/java.svg";
 
+import { skillsData } from "../ProjectsData/SkillsData";
 export const Skills = () => {
   return (
     <div
@@ -21,7 +13,7 @@ export const Skills = () => {
           SKILLS
         </h1>
         <div className="sm:p-5 p-2 grid sm:grid-cols-3 md:grid-cols-4 grid-cols-2 gap-5">
-          <SkillCompo img={javascript} heading={"Javascript"} size={100} />
+          {/* <SkillCompo img={javascript} heading={"Javascript"} size={100} />
           <SkillCompo img={reactlogo} heading={"ReactJS"} />
           <SkillCompo img={python} heading={"Python"} />
           <SkillCompo img={node} heading={"NodeJS"} />
@@ -29,7 +21,21 @@ export const Skills = () => {
           <SkillCompo img={mongo} heading={"MongoDB"} />
           <SkillCompo img={cpp} heading={"C++"} />
           <SkillCompo img={aws} heading={"AWS"} />
-          <SkillCompo img={java} heading={"Java"} size={100} />
+          <SkillCompo img={java} heading={"Java"} size={100} /> */}
+          {skillsData.map(
+            (
+              skill,
+              index // Map over skillsData
+            ) => (
+              <SkillCompo
+                key={index}
+                img={skill.img}
+                heading={skill.language}
+                skills={skill.skills}
+                size={100}
+              /> // Pass skills as a prop
+            )
+          )}
         </div>
       </div>
     </div>
