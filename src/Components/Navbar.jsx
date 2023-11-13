@@ -111,12 +111,12 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
                 onClick={() => setSelectedPage("home")}
                 href="#home"
               >
-                <IoIosHome
+                {/* <IoIosHome
                   size={23}
                   className={`${
                     selectedPage == "home" ? "text-primary" : ""
                   }text-headColor`}
-                />
+                /> */}
                 Home
               </AnchorLink>
               <AnchorLink
@@ -126,12 +126,12 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
                 href="#about"
                 onClick={() => setSelectedPage("about")}
               >
-                <FaUserSecret
+                {/* <FaUserSecret
                   size={23}
                   className={`${
                     selectedPage == "contact" ? "text-primary" : ""
                   }text-headColor`}
-                />
+                /> */}
                 About
               </AnchorLink>
               <AnchorLink
@@ -141,12 +141,12 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
                 onClick={() => setSelectedPage("skills")}
                 href="#skills"
               >
-                <GiSkills
+                {/* <GiSkills
                   size={23}
                   className={`${
                     selectedPage == "skills" ? "text-primary" : ""
                   }text-headColor`}
-                />
+                /> */}
                 Skills
               </AnchorLink>
               <AnchorLink
@@ -157,12 +157,12 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
                 onClick={() => setSelectedPage("projects")}
                 hrefLang="#projects"
               >
-                <BsFillHddStackFill
+                {/* <BsFillHddStackFill
                   size={23}
                   className={`${
                     selectedPage == "projects" ? "text-white" : ""
                   } text-headColor`}
-                />
+                /> */}
                 Projects
               </AnchorLink>
               <AnchorLink
@@ -172,12 +172,12 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
                 href="#contact"
                 onClick={() => setSelectedPage("contact")}
               >
-                <AiFillContacts
+                {/* <AiFillContacts
                   size={23}
                   className={`${
                     selectedPage == "contact" ? "text-primary" : ""
                   }text-headColor`}
-                />
+                /> */}
                 Contact
               </AnchorLink>
 
