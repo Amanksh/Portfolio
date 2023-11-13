@@ -50,7 +50,7 @@ export const skillsData = [
     ],
   },
   {
-    img: mongo,
+    img: express,
     language: "Express",
     skills: [
       "Routing",
@@ -62,7 +62,7 @@ export const skillsData = [
     ],
   },
   {
-    img: express,
+    img: mongo,
     language: "MongoDB",
     skills: [
       "CRUD Operations",

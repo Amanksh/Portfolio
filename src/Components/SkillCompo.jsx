@@ -23,7 +23,7 @@ export const SkillCompo = ({ img, heading, size, skills }) => {
 
       {isHover && (
         <div className=" modal bg-white bg-heading flex justify-center items-center flex-col gap-3 shadow-lg shadow-btncolor absolute top-[-50px] left-0 text-primary font-bold p-3 rounded-lg   z-50 transform min-w-max">
-          <h1>Skills :</h1>
+          <h1>{heading}:</h1>
           <ul className="grid   text-left ">
             {skills.map((skill, index) => (
               <li key={index}>
